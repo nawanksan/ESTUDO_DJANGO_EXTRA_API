@@ -24,4 +24,9 @@ class BookGetId(ModelSchema):
         model = Book
         model_fields = ['id', 'title', 'is_active']
         
+class BookIn(schema):
+    title: str
+    author_id: int
     
+class Message(schema):
+    message: str    
